@@ -127,6 +127,3 @@ https://help.vtex.com/tutorial/o-que-sao-templates?locale=pt
 https://help.vtex.com/tutorial/como-identificar-o-template-de-uma-pagina?locale=pt  
 https://help.vtex.com/tutorial/what-are-shelves--28D8d6GFfuAsuAoeWC8eq0  
 https://help.vtex.com/tutorial/subtemplates?locale=es  
-  
-
-teste
