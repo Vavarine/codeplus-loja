@@ -187,11 +187,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
-      color: rgba(8, 8, 8, 0.795);
-
       transition: background-color .2s;
       cursor: pointer;
+
+      & li{
+        color: rgba(8, 8, 8, 0.795);
+      }
 
       &:hover{
         background-color: #d8d8d8;
