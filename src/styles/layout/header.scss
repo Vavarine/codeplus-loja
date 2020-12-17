@@ -10,7 +10,7 @@
 
   & b{
     font-weight: bolder;
-    color: #00ca22;
+    color: #01bb00;
   }
 
   & .headerTop{
@@ -130,7 +130,7 @@
         & svg{
           height: 20px;
           stroke-width: 10px;
-          fill: #00bc0e;
+          fill: #01bb00;
         }
       }
 
@@ -155,7 +155,7 @@
         
         & svg{
           height: 22px;
-          fill: #00bc0e;
+          fill: #01bb00;
         }
       }
     }
@@ -173,36 +173,105 @@
 
   font-size: 14px;
   font-weight: 600;
+  color:rgba(0, 0, 0, 0.795);
 
   &__nav{
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     &-item{
-      height: 46px;
-      padding: 0px 30px;
+      position: relative;
+      height: 100%;
+      padding: 0px 10px;
 
       border-right: solid 1px #d3d3d3;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      
       transition: background-color .2s;
       cursor: pointer;
 
-      & li{
-        color: rgba(8, 8, 8, 0.795);
+      &Link{
+        height: 100%;
+        color: rgba(0, 0, 0, 0.795);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       &:hover{
         background-color: #d8d8d8;
+        color:rgba(0, 0, 0, 0.795);
+      }
+
+      &:hover .menu__nav-categoryBox{
+        opacity: 1;
+        visibility: visible;
       }
 
       &:last-of-type{
         border-right: none;
       }
-    }
+    };
 
-    
+    &-categoryBox{
+      visibility: hidden;
+      position: absolute;
+
+      width: auto;
+      min-width: calc(100% + 2px);
+      left: -1px;
+
+      background-color: #f2f2f2;
+      opacity: 0;
+
+      transition: all .2s;
+
+      &-item{
+        padding: 10px;
+        color:rgba(0, 0, 0, 0.795);
+        transition: background-color .2s; 
+        white-space: nowrap;
+
+        &:hover{
+          background-color: #d8d8d8;
+          color:rgba(0, 0, 0, 0.795);
+        };
+
+        &:hover .menu__nav-categoryBox-categoryBox{
+          visibility: visible;
+        }
+      }
+
+      &-categoryBox {
+        visibility: hidden;
+        position: absolute;
+        width: auto;
+
+        background-color: #f2f2f2;
+
+        margin-left: calc(100% - 10px);
+        margin-top: -29px;
+
+        &-item{
+          padding: 10px;
+          color:rgba(0, 0, 0, 0.795);
+
+          white-space: nowrap;
+
+          transition: background-color .2s;
+
+          &:hover{
+            background-color: #d8d8d8;
+            color:rgba(0, 0, 0, 0.795);
+          };
+        }
+
+        &:hover{
+          visibility: visible;
+        }
+      }
+    }
   }
 }
