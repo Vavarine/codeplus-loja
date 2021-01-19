@@ -3,6 +3,8 @@ const createElement = (props) => {
 
   props?.className && (el.className = props.className); 
 
+  props?.id && (el.id = props.id);
+
   props?.classList && el.classList.add(...props.classList);
 
   props?.innerHTML && (el.innerHTML = props.innerHTML); 
