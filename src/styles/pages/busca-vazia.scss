@@ -1,0 +1,42 @@
+.bread {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__nav{
+    width: 100%;
+     & a {
+       font-weight: 700;
+     }
+  }
+  
+}
+
+.page-erro {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 100%;
+  display: flex; 
+  align-items: center;
+
+  &__dicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    & h2 {
+      font-size: calculadora_rem(28);
+      color: #01bb00;
+    }
+
+    & p {
+      line-height: 30px;
+    }
+
+    & a {
+      color: #01bb00;
+      text-decoration: underline;
+    }
+  }
+}

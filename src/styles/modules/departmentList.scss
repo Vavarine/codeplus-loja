@@ -1,0 +1,52 @@
+.department-list {
+  background-color: #000;
+
+  & div {
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h3 {
+      color: #fff;
+      font-size: calculadora_rem(42);
+      text-transform: uppercase;
+    }
+
+    & p {
+      color: #fff;
+      font-size: calculadora_rem(18);
+      text-transform: uppercase;
+    }
+
+    & ul {
+      margin-top: 50px;
+      display: flex;
+      align-items: row;
+      flex-wrap: wrap;
+      row-gap: 50px;
+      justify-content: space-between;
+
+      & li {
+        width: 280px;
+
+        & h4 {
+          margin-top: 25px;
+          font-size: calculadora_rem(28);
+          color: #01bb00;
+        }
+
+        & p {
+          font-size: calculadora_rem(12);
+        }
+
+        & img {
+          height: 250px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  
+}

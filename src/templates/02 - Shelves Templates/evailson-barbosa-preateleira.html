@@ -4,8 +4,8 @@
 #set($escapedName = $product.HtmlEscapedName)
 #set($campoProduto = $product.ProductField(id))
 
-<a class="prateleira__productImage js--lazyload has--lazyload" data-noscript="" title="$escapedName" href="$uri">
-    <noscript>$product.GetImageTag(2)</noscript>
+<a class="prateleira__productImage" data-noscript="" title="$escapedName" href="$uri">
+    $product.GetImageTag(2)
 </a>
 
 <div class="prateleira__data" data-id="$id">

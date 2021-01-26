@@ -1,3 +1,64 @@
 body {
   background-color: #fdfdfd;
 }
+
+.slide-principal-container {
+  position: relative;
+  width: 100%;
+
+  & button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: calc(50% - 25px);
+    transition: opacity .2s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    & svg {
+      height: 45px;
+      fill: #01bb00;
+    }
+  }
+
+  &__button--next { 
+    right: 0px;
+  }
+
+  &__button--prev svg {
+    transform: rotate(180deg);
+  }
+}
+
+.slide-principal {
+  flex-direction: column;
+}
+
+.slick {
+  &-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+  }
+
+  &-dots {
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+
+    & button {
+      position: relative;
+    }
+  }
+
+  &-list {
+    & img {
+    }
+  }
+}

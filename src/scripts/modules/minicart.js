@@ -6,19 +6,19 @@ const Minicart = {
     const $minicart = document.querySelector(`.${minicartButtonClass}`);
 
     // Código para botão temporario de adição de produtos ao carrinho
-    const $addToCartButton = document.querySelector('body main button');
+    // const $addToCartButton = document.querySelector('body main button');
 
-    $addToCartButton.addEventListener('click', () => {
-      var item = {
-        id: 3,
-        quantity: 2,
-        seller: '1'
-      };
-      vtexjs.checkout.addToCart([item], null)
-        .done(function(orderForm) {
-          alert('Item adicionado!');
-        });
-    })
+    // $addToCartButton.addEventListener('click', () => {
+    //   var item = {
+    //     id: 3,
+    //     quantity: 2,
+    //     seller: '1'
+    //   };
+    //   vtexjs.checkout.addToCart([item], null)
+    //     .done(function(orderForm) {
+    //       alert('Item adicionado!');
+    //     });
+    // })
 
     // Código para o botão que abre o carrinho
     $minicart.addEventListener('click', () => {

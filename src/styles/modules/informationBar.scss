@@ -1,0 +1,36 @@
+.information-bar {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: row;
+  
+  &__box {
+    height: 60px;
+    width: 420px;
+    padding: 10px 20px;
+    border-right: solid 2px #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    & img {
+      height: 35px;
+    }
+
+    &__text {
+      font-weight: 700;
+      font-size: 12px;
+      text-align: center;
+
+      & b {
+        font-weight: bolder;
+        color: #01bb00;
+      }
+    }
+  }
+}

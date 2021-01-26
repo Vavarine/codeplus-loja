@@ -131,6 +131,19 @@ h3 {
     }
 }
 
+.slick-slider {
+    display: flex;
+}
+
+.slick-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
 
 /* Inicio load */
 
